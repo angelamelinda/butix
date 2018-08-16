@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+$font-rubik: 'Rubik', sans-serif;
+$color-white: #fff;
+$color-green: #006e85; 
+$color-red: #e00;
+
+body {
+    font-family: $font-rubik;
+}
+
+.background {
+    &-dot {
+        background-image: url('../img/dot.png');
+        background-repeat: repeat;
+    }
+    &-white {
+        background-color: $color-white;
+    }
+    &-green {
+        background-color: $color-green;
+    }
+
+    &-red {
+        background-color: $color-red;
+    }
+}
+.color {
+    &-white {
+        color: $color-white;
+    }
+    &-green {
+        color: $color-green;
+    }
+    &-red {
+        color: $color-red;
+    }
+}
+
+a {
+  color: $color-green;
+  transition: all .2s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+input[type="text"], input[type="number"], input[type="email"], select, button {
+    height: 36px;
+    line-height: 36px;
+    -webkit-appearance: none;
+}
+
+textarea {
+    display: block;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select, textarea, button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+input[type="text"], input[type="number"], input[type="email"], select, textarea {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+}
+
+button {
+    background-color: $color-green;
+    color: $color-white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+}
+.content {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
