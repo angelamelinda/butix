@@ -3,22 +3,13 @@
 })(function($, window, document) {
 
     var app = {
-
-        // ==============================================================================================
-        // Call your function here to become a single function
-        // * This method make your code more modular and make it easy to toggle your function
-        // * If you want to disable a function, just commented on function that you need to disable below
-        // ==============================================================================================
-
+              
         init: function($) {
             app.formValidation();
-            app.isEmail(email);
-            app.stringGen(len);
         },
 
         // ======================================================================
-        // Your function here
-        // * Don't forget to use proper function name to describes your function
+        // Begin function declaration
         // ======================================================================
         formValidation: function() {
             var statusName = false, statusEmail = false, statusPhoneNo = false, statusPhoneArea = false, statusAddress = false, emailAddress ='';
@@ -110,12 +101,8 @@
 
     };
 
-    // This code will initialize your whole function in this JS file
+    // This code will initialize the whole function in this JS file
     $(function() {
         app.init($);
-    });
-
-    $(window).resize(function() {
-        // Insert your JS function here that need to triggered when window resize
     });
 });
