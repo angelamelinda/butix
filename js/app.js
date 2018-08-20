@@ -58,7 +58,7 @@
               }
         
               // Check if the length of the phone number is more than 0 or not
-              if(usrPhoneNo.val().length > 0) {
+              if(usrPhoneNo.val().length > 0 && usrPhoneNo.val() >= 0) {
                 usrPhoneNo.parent('#form-user-phone').siblings('small').remove();
                 statusPhoneNo = true;
               } else {
